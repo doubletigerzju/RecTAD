@@ -17,7 +17,7 @@ import numpy as np
 **2.2 prepare data**
 ```
 ##read original data and convert it to dense format
-path_input = "C:/Users/Lenovo/Desktop/testdata.txt"
+path_input = "Path to testdata/testdata.txt"
 graph_edge = np.loadtxt(path_input)
 chr='chr3'
 resolution = 50000
