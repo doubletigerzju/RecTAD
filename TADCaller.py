@@ -55,9 +55,7 @@ class TADCaller:
         return np.array(merged)
 
 
-    # -----------------------------
-    # Statistical test for boundary
-    # -----------------------------
+    # TADs边界点假设检验
     def test_boundary(self, M, i, window, alpha=0.05):
 
         N = M.shape[0]
@@ -87,9 +85,7 @@ class TADCaller:
         return p < alpha
 
 
-    # -----------------------------
-    # Filter boundaries by statistics
-    # -----------------------------
+    # 根据假设检验过滤TADs
     def filter_boundaries(self, M, boundaries):
 
         filtered = []
